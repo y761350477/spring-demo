@@ -1,4 +1,4 @@
-package test2;
+package test4;
 
 public interface TimDAO {
 

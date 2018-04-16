@@ -1,4 +1,4 @@
-package test2;
+package test4;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.ComponentScan;
@@ -10,7 +10,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Configuration
-@ComponentScan(basePackages = "test2")
+@ComponentScan(basePackages = "test4")
 public class Config {
 
     @Target({ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.TYPE})

@@ -4,16 +4,16 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- 方式一: 设值注入 -->
-    <bean id="userSetter" class="common.User">
+    <bean id="userSetter" class="test1.User">
         <property name="name" value="YangChen"/>
         <property name="timDAO" ref="timImpl"/>
         <property name="wechatDAO" ref="wechatImpl"/>
     </bean>
-    <bean id="timImpl" name="timDAO" class="common.TimImpl"/>
-    <bean id="wechatImpl" name="wechatDAO" class="common.WeChatImpl"/>
+    <bean id="timImpl" name="timDAO" class="test1.TimImpl"/>
+    <bean id="wechatImpl" name="wechatDAO" class="test1.WeChatImpl"/>
 
     <!-- 方式二: 构造注入 -->
-    <bean id="userStructure" class="common.User">
+    <bean id="userStructure" class="test1.User">
         <property name="name" value="YangChen"/>
         <constructor-arg name="timDAO" ref="timImpl"/>
         <constructor-arg name="wechatDAO" ref="wechatImpl"/>
@@ -23,7 +23,7 @@
     <!-- byName: “按名称自动装配”是指，如果一个bean的名称与其他bean属性的名称是一样的，那么将自动装配它。 -->
     <!-- byType: “类型自动装配”的意思是如果一个bean的数据类型与其它bean属性的数据类型相同，将自动兼容装配它。-->
     <!-- constructor: “通过构造自动装配”，实际上是按构造函数的参数类型自动装配。 这意味着，如果一个bean的数据类型与其他bean的构造器参数的数据类型是相同的，那么将自动装配。-->
-    <bean id="userAuto" class="common.User" autowire="constructor">
+    <bean id="userAuto" class="test1.User" autowire="constructor">
         <property name="name" value="YangChen"/>
     </bean>
 

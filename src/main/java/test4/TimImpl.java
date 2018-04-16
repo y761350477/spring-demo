@@ -1,5 +1,8 @@
-package common;
+package test4;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class TimImpl implements TimDAO {
 
     @Override

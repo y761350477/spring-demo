@@ -1,8 +1,20 @@
-package common;
+package test4;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("userBean")
 public class User {
+    @Value("YangChen")
     private String name;
+
+    @Autowired
+    @Config.Cold
     private TimDAO timDAO;
+
+    @Autowired
+    @Config.Creamy
     private WechatDAO wechatDAO;
 
     public User() {
@@ -58,4 +70,7 @@ public class User {
     public void setWechatDAO(WechatDAO wechatDAO) {
         this.wechatDAO = wechatDAO;
     }
+
+
+
 }
