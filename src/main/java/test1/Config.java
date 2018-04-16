@@ -9,7 +9,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 @ComponentScan("test1")
 @Configuration
 // 声明属性源(classpath: 可以省略)
-//@PropertySource("classpath:data.properties")
+@PropertySource("classpath:data.properties")
 public class Config {
 
     @Bean
