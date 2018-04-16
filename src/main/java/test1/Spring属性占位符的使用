@@ -1,5 +1,5 @@
 Spring属性源使用:
-    1. 在Config配置文件中声明属性源文件;
+    1. 在Config配置文件中声明属性源文件(声明属性源(classpath: 可以省略));
     2. 配置PropertySourcesPlaceholderConfigurer的Bean;
     3. 属性上使用${}来获取配置文件properties中对应的数据;
 注:

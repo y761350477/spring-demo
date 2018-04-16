@@ -1,0 +1,7 @@
+1. 自定义注解目的是为了解决多个相同注解名的注解冲突.
+@Qualifier("cold")
+@Qualifier("creamy")
+在属性字段上是不允许这种写法的, 所以可以通过自定义注解来进行
+@Config.Cold
+@Config.Creamy
+的方式替换.

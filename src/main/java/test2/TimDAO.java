@@ -1,4 +1,4 @@
-package annotation;
+package test2;
 
 public interface TimDAO {
 
