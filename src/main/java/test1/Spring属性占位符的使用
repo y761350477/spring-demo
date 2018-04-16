@@ -1,0 +1,7 @@
+Spring属性源使用:
+    1. 在Config配置文件中声明属性源文件;
+    2. 配置PropertySourcesPlaceholderConfigurer的Bean;
+    3. 属性上使用${}来获取配置文件properties中对应的数据;
+注:
+    问题1: 没有声明属性源会报Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'disc.title' in value "${disc.title}"的问题.
+    问题2: 不配置PropertySourcesPlaceholderConfigurer的Bean会直接输出${}信息而不是对应的数据信息.
