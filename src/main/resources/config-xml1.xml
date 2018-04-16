@@ -6,6 +6,8 @@
     <!--这个必须要带否则会报错-->
     <context:annotation-config/>
     <!--引入带有@Configuration的Java类-->
-    <bean class="javaconfig.XmlConfig"/>
+    <bean class="test3.config.Config"/>
+    <!--引入Xml配置文件-->
+    <import resource="config-xml.xml"/>
 
 </beans>
