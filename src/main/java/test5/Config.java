@@ -16,4 +16,9 @@ public class Config {
     public static PropertySourcesPlaceholderConfigurer placeholderConfigurer() {
         return new PropertySourcesPlaceholderConfigurer();
     }
+
+    @Bean
+    public User1 user1() {
+        return new User1();
+    }
 }
